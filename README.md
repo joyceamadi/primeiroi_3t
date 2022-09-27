@@ -1,1 +1,7 @@
-# primeiroi_3t
+# Terceiro Trimestre
+
+## Identificação
+Joyce Chidinma Amadi - Nr. 37
+
+## Conteúdo
+HTML, CSS,javaScript

@@ -36,6 +36,15 @@ function total(){
     let valor = document.getElementById("val").value;
     let juros = document.getElementById("ju").value;
     let mes = document.getElementById("mes").value;
+   
+   
+   if(!Number (val)){
+       alert("O valor deve ser um número.");
+       document.getElementById("valor"). value = "";
+       document.getElementById("valor"). focus();
+       return
+   }
+   
     let resultado = 0;
     for(let i = 1; i <= mes; i++){
         resultado = valor * (1+(juros/100));
@@ -46,27 +55,54 @@ function total(){
 }
 
 function soma(){
-    let n1 = document.getElementById("n1").value;
-    let n2 = document.getElementById("n2").value;
-    let n3 = document.getElementById("n3").value;
-    let n4 = document.getElementById("n4").value;
+    let n1 = document.getElementById("b1").value;
+    let n2 = document.getElementById("b2").value;
+    let n3 = document.getElementById("b3").value;
+    let n4 = document.getElementById("b4").value;
     let r = Number(n1) + Number(n2) + Number(n3) + Number(n4);
     document.getElementById("resultado").innerHTML = r;
-}
-function média(){
-    let n1 = document.getElementById("n1").value;
-    let n2 = document.getElementById("n2").value;
-    let n3 = document.getElementById("n3").value;
-    let n4 = document.getElementById("n4").value;
-    let r = (Number(n1) + Number(n2) + Number(n3) + Number(n4))/4;
-    document.getElementById("resultado").innerHTML = r;
-}
-function necessário(){
-    let n1 = document.getElementById("n1").value;
-    let n2 = document.getElementById("n2").value;
-    let n3 = document.getElementById("n3").value;
-    let n4 = document.getElementById("n4").value;
-    let r = 240 - (Number(n1) + Number(n2) + Number(n3)+ Number(n4));
-    document.getElementById("resultado").innerHTML = r;
+    if(!Number (val)){
+        alert("O valor deve ser um número.");
+        document.getElementById("valor"). value = "";
+        document.getElementById("valor"). focus();
+        return
+    }
+
+
+
+
+
 }
 
+function Média(){
+    let n1 = document.getElementById("b1").value;
+    let n2 = document.getElementById("b2").value;
+    let n3 = document.getElementById("b3").value;
+    let n4 = document.getElementById("b4").value;
+    let r = (Number(n1) + Number(n2) + Number(n3) + Number(n4))/4;
+    document.getElementById("resultado").innerHTML = r;
+    if(!Number (val)){
+        alert("O valor deve ser um número.");
+        document.getElementById("valor"). value = "";
+        document.getElementById("valor"). focus();
+        return
+    }
+
+}
+
+
+function necessário(){
+    let n1 = document.getElementById("b1").value;
+    let n2 = document.getElementById("b2").value;
+    let n3 = document.getElementById("b3").value;
+    let n4 = document.getElementById("b4").value;
+    let r = 240 - (Number(n1) + Number(n2) + Number(n3) + Number(n4));
+    document.getElementById("resultado").innerHTML = r;
+    if(!Number (val)){
+        alert("O valor deve ser um número.");
+        document.getElementById("valor"). value = "";
+        document.getElementById("valor"). focus();
+        return
+    }
+
+}

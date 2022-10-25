@@ -1,1 +1,20 @@
-
+body {
+     margin: 0%;
+     padding: 0%;
+     font-family: 'Courier New', Courier, monospace;
+ }
+ .calculadora {
+     background: purple;
+     width: 200px;
+     padding: 10px;
+ }
+#btnCal {
+    background: rgb(17, 250, 17);
+    color: white;
+    padding: 2px;
+}
+#btnCal:hover {
+    background: rgb(17, 40, 250);
+    color: white;
+    cursor: pointer;
+}
